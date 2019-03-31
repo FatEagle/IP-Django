@@ -9,5 +9,5 @@ class IPView(View):
         ret2 = request.META['REMOTE_ADDR']
         # 真正的IP
         ret = request.META['HTTP_X_FORWARDED_FOR']
-        return HttpResponse("您的IP是: {}\n".format(ret))
+        return HttpResponse("您的IP是(Your IP is): {}\n".format(ret))
 
