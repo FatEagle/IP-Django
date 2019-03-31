@@ -5,5 +5,6 @@ from django.http import HttpResponse
 class IPView(View):
 
     def get(self, request):
-        return HttpResponse('result')
+        ret = request.META['HTTP_X_FORWARDED_FOR']
+        return HttpResponse(ret)
 
