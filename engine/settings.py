@@ -121,7 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # 百度API获取中国地理位置
-AK = 'Your AK'
+AK = '2GQ4fV5lONZssXjG2zTghyhRb6BPC7dM'
 
 try:
     from .local_settings import *
