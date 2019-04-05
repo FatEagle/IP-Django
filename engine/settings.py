@@ -119,3 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 百度API获取中国地理位置
+AK = 'Your AK'
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
