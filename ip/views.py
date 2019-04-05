@@ -34,7 +34,7 @@ class IPView(View):
         address = json.load(address)
 
         return HttpResponse(
-            "您的IP是(Your IP is): {}\n地理位置是: 省:{}, 市:{} ".format(
+            "<p>您的IP是(Your IP is): {}<\p><p>地理位置是: 省:{}, 市:{}<\p>".format(
                 ret,
                 address['content']['address_detail']['province'],
                 address['content']['address_detail']['city'])
