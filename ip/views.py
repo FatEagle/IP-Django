@@ -36,7 +36,7 @@ class IPView(View):
         return HttpResponse(
             "您的IP是(Your IP is): {}\n地理位置是: 省:{}, 市:{} ".format(
                 ret,
-                address['content']['province'],
-                address['content']['city'])
+                address['content']['address_detail']['province'],
+                address['content']['address_detail']['city'])
         )
 
